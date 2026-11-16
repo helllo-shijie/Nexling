@@ -1,0 +1,1 @@
+"""Application layer: orchestration, task state machine, capability registry/gate."""

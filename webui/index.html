@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>NexLing 技术翻译工作台</title>
+    <style>
+      /* 首屏骨架：在 React 包加载完成前先把版式画出来，避免白屏等待 */
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #f7f8fa;
+        color: #1b2430;
+        font-family: "Segoe UI", "Microsoft YaHei", -apple-system, sans-serif;
+      }
+      #boot {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      #boot .b-top {
+        height: 48px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 18px;
+        border-bottom: 1px solid #e6e9ef;
+        background: #fbfcfd;
+      }
+      #boot .b-dot {
+        width: 22px;
+        height: 22px;
+        border-radius: 6px;
+        background: #3b5c8f;
+        opacity: 0.9;
+      }
+      #boot .b-name {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+      }
+      #boot .b-nav {
+        display: flex;
+        gap: 14px;
+        margin-left: 22px;
+      }
+      #boot .b-nav i {
+        display: block;
+        width: 52px;
+        height: 8px;
+        border-radius: 4px;
+        background: #e6e9ef;
+      }
+      #boot .b-body {
+        flex: 1;
+        display: flex;
+        gap: 22px;
+        padding: 24px 28px;
+        max-width: 1180px;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+      #boot .b-col {
+        flex: 1;
+        background: #ffffff;
+        border: 1px solid #eceff4;
+        border-radius: 10px;
+        padding: 20px;
+      }
+      #boot .b-line {
+        height: 9px;
+        border-radius: 5px;
+        background: #eef1f6;
+        margin-bottom: 12px;
+      }
+      #boot .b-line.w70 {
+        width: 70%;
+      }
+      #boot .b-line.w45 {
+        width: 45%;
+      }
+      #boot .b-foot {
+        padding: 0 0 18px;
+        text-align: center;
+        font-size: 12px;
+        color: #8b96a5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="boot">
+        <div class="b-top">
+          <span class="b-dot"></span>
+          <span class="b-name">NexLing</span>
+          <span class="b-nav"><i></i><i></i><i></i></span>
+        </div>
+        <div class="b-body">
+          <div class="b-col">
+            <div class="b-line w70"></div>
+            <div class="b-line"></div>
+            <div class="b-line w45"></div>
+          </div>
+          <div class="b-col">
+            <div class="b-line w70"></div>
+            <div class="b-line"></div>
+            <div class="b-line w45"></div>
+          </div>
+        </div>
+        <div class="b-foot">正在载入工作台…</div>
+      </div>
+    </div>
+    <script>
+      // 首屏到达里程碑（性能实测）与骨架文案语言（React 挂载前先按已存语言显示）
+      // 里程碑要求 bridge token：从原生桥取（不出现在页面源码里），取不到就不上报。
+      (function () {
+        var sent = false;
+        function send(token) {
+          if (sent) return;
+          sent = true;
+          try {
+            fetch("/__mark?name=html_parsed", {
+              cache: "no-store",
+              headers: token ? { "X-NexLing-Token": token } : {},
+            });
+          } catch (e) {
+            /* 忽略 */
+          }
+        }
+        function attempt() {
+          var api = window.pywebview && window.pywebview.api;
+          if (api && api.get_bridge_token) {
+            Promise.resolve(api.get_bridge_token()).then(send).catch(function () {});
+            return true;
+          }
+          return false;
+        }
+        if (!attempt()) {
+          window.addEventListener("pywebviewready", attempt);
+          var tries = 0;
+          var timer = setInterval(function () {
+            if (attempt() || ++tries > 40) clearInterval(timer);
+          }, 50);
+        }
+      })();
+      try {
+        if (localStorage.getItem("nexling.ui_lang") === "en") {
+          var foot = document.querySelector("#boot .b-foot");
+          if (foot) foot.textContent = "Loading workbench…";
+        }
+      } catch (e) {
+        /* 忽略 */
+      }
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

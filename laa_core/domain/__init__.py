@@ -1,0 +1,1 @@
+"""Domain layer: pure business rules, no infra/app/UI deps."""

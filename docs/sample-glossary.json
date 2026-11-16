@@ -1,0 +1,16 @@
+{
+  "schema_version": "glossary-package/v1",
+  "pack_id": "tech-ml-sample",
+  "version": "1.0.0",
+  "langs": ["en", "zh-Hans"],
+  "license": "sample",
+  "attribution": "local",
+  "entries": [
+    { "source_term": "backpropagation", "target_term": "反向传播", "domain": "tech" },
+    { "source_term": "gradient descent", "target_term": "梯度下降", "domain": "tech", "forced": true },
+    { "source_term": "overfitting", "target_term": "过拟合", "domain": "tech" },
+    { "source_term": "learning rate", "target_term": "学习率", "domain": "tech" },
+    { "source_term": "convolutional neural network", "target_term": "卷积神经网络", "domain": "tech" },
+    { "source_term": "activation function", "target_term": "激活函数", "domain": "tech" }
+  ]
+}

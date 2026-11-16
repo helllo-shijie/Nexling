@@ -1,0 +1,309 @@
+{
+  "pairs": [
+    {
+      "fg": "--accent",
+      "bg": "--accent-soft",
+      "min": 3.0
+    },
+    {
+      "fg": "--accent",
+      "bg": "--bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--accent",
+      "bg": "--bg-tint",
+      "min": 3.0
+    },
+    {
+      "fg": "--accent",
+      "bg": "--surface",
+      "min": 3.0
+    },
+    {
+      "fg": "--apology",
+      "bg": "--emotion-apology-bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--code-fg",
+      "bg": "--code-bg",
+      "min": 4.5
+    },
+    {
+      "fg": "--confidence-high-fg",
+      "bg": "--confidence-high-bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--confidence-low-fg",
+      "bg": "--low-bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--confidence-medium-fg",
+      "bg": "--confidence-medium-bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--danger-fg",
+      "bg": "--bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--danger-fg",
+      "bg": "--danger-bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--danger-fg",
+      "bg": "--surface",
+      "min": 3.0
+    },
+    {
+      "fg": "--emphasis",
+      "bg": "--emotion-emphasis-bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--humor",
+      "bg": "--emotion-humor-bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--negative",
+      "bg": "--bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--negative",
+      "bg": "--risk-bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--negative",
+      "bg": "--surface",
+      "min": 3.0
+    },
+    {
+      "fg": "--on-accent",
+      "bg": "--accent",
+      "min": 3.0
+    },
+    {
+      "fg": "--on-accent",
+      "bg": "--accent-hover",
+      "min": 3.0
+    },
+    {
+      "fg": "--on-accent",
+      "bg": "--text-secondary",
+      "min": 3.0
+    },
+    {
+      "fg": "--positive",
+      "bg": "--bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--positive",
+      "bg": "--emotion-positive-bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--positive",
+      "bg": "--success-bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--positive",
+      "bg": "--surface",
+      "min": 3.0
+    },
+    {
+      "fg": "--risk-fg",
+      "bg": "--bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--risk-fg",
+      "bg": "--risk-bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--risk-fg",
+      "bg": "--surface",
+      "min": 3.0
+    },
+    {
+      "fg": "--success-fg",
+      "bg": "--success-bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--text",
+      "bg": "--accent-soft",
+      "min": 4.5
+    },
+    {
+      "fg": "--text",
+      "bg": "--bg",
+      "min": 4.5
+    },
+    {
+      "fg": "--text",
+      "bg": "--bg-tint",
+      "min": 4.5
+    },
+    {
+      "fg": "--text",
+      "bg": "--danger-bg",
+      "min": 4.5
+    },
+    {
+      "fg": "--text",
+      "bg": "--low-bg",
+      "min": 4.5
+    },
+    {
+      "fg": "--text",
+      "bg": "--risk-bg",
+      "min": 4.5
+    },
+    {
+      "fg": "--text",
+      "bg": "--row-low-bg",
+      "min": 4.5
+    },
+    {
+      "fg": "--text",
+      "bg": "--row-src-bg",
+      "min": 4.5
+    },
+    {
+      "fg": "--text",
+      "bg": "--row-src-hover-bg",
+      "min": 4.5
+    },
+    {
+      "fg": "--text",
+      "bg": "--seg-low-bg",
+      "min": 4.5
+    },
+    {
+      "fg": "--text",
+      "bg": "--sent-neg-bg",
+      "min": 4.5
+    },
+    {
+      "fg": "--text",
+      "bg": "--sent-pos-bg",
+      "min": 4.5
+    },
+    {
+      "fg": "--text",
+      "bg": "--surface",
+      "min": 4.5
+    },
+    {
+      "fg": "--text",
+      "bg": "--surface-2",
+      "min": 4.5
+    },
+    {
+      "fg": "--text",
+      "bg": "--surface-hover",
+      "min": 4.5
+    },
+    {
+      "fg": "--text-muted",
+      "bg": "--bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--text-muted",
+      "bg": "--surface",
+      "min": 3.0
+    },
+    {
+      "fg": "--text-muted",
+      "bg": "--surface-2",
+      "min": 3.0
+    },
+    {
+      "fg": "--text-muted",
+      "bg": "--surface-hover",
+      "min": 3.0
+    },
+    {
+      "fg": "--text-secondary",
+      "bg": "--accent-soft",
+      "min": 3.0
+    },
+    {
+      "fg": "--text-secondary",
+      "bg": "--bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--text-secondary",
+      "bg": "--surface",
+      "min": 3.0
+    },
+    {
+      "fg": "--text-secondary",
+      "bg": "--surface-2",
+      "min": 3.0
+    },
+    {
+      "fg": "--text-secondary",
+      "bg": "--surface-hover",
+      "min": 3.0
+    },
+    {
+      "fg": "--toast-fg",
+      "bg": "--toast-bg",
+      "min": 4.5
+    },
+    {
+      "fg": "--urgent",
+      "bg": "--bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--urgent",
+      "bg": "--emotion-urgent-bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--urgent",
+      "bg": "--low-bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--urgent",
+      "bg": "--surface",
+      "min": 3.0
+    },
+    {
+      "fg": "--warn-fg",
+      "bg": "--bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--warn-fg",
+      "bg": "--low-bg",
+      "min": 3.0
+    },
+    {
+      "fg": "--warn-fg",
+      "bg": "--surface",
+      "min": 3.0
+    },
+    {
+      "fg": "--warn-fg",
+      "bg": "--warn-bg",
+      "min": 3.0
+    }
+  ]
+}
