@@ -6,8 +6,8 @@
 
 | 文件 | 领域 | 条目数 | 字节数 | 典型易错词 |
 | --- | --- | ---: | ---: | --- |
-| `digital-hardware-semiconductors.json` | 数字硬件与半导体 | 127 | 22802 | cache coherence、out-of-order execution、metastability |
-| `advanced-mathematics.json` | 高等数学 | 136 | 23915 | eigenvalue、monomorphism、condition number |
+| `digital-hardware-semiconductors.json` | 数字硬件与半导体 | 127 | 22817 | cache coherence、out-of-order execution、metastability |
+| `advanced-mathematics.json` | 高等数学 | 136 | 23905 | eigenvalue、monomorphism、condition number |
 | `machine-learning-deep-learning.json` | 机器学习与深度学习 | 145 | 26387 | backpropagation、perplexity、retrieval-augmented generation |
 | `computer-networks.json` | 计算机网络 | 133 | 23389 | congestion control、head-of-line blocking、anycast |
 | `databases-distributed-systems.json` | 数据库与分布式系统 | 149 | 25379 | write-ahead logging、linearizability、bloom filter |
